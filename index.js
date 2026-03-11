@@ -45,7 +45,8 @@ app.use("/users", authenticateAdmin, userRouter);
 const startServer = async () => {
   await dbConnect();
   app.listen(5000, () => {
-    console.log("MongoDBServer Started");
+    console.log("MongoDB Connected");
+    console.log("Server Started");
   });
 };
 
